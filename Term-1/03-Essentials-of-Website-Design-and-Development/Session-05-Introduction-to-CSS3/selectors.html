@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <style>
+    /* 1. Element (type) selector: all <p> elements */
+    p { font-size: 18px; }
+
+    /* 2. Class selector: any element with class="price" */
+    .price { color: green; font-weight: bold; }
+
+    /* 3. ID selector: the ONE element with id="offer" */
+    #offer { background: #fff3cd; padding: 8px; }
+
+    /* 4. Grouping: same style for h1 and h2 */
+    h1, h2 { font-family: Georgia, serif; }
+
+    /* 5. Descendant (nested) selector: <li> inside <nav> only */
+    nav li { display: inline; margin-right: 12px; }
+
+    /* 6. Child selector: <p> that is a direct child of .card */
+    .card > p { margin: 4px 0; }
+
+    /* 7. Attribute selector: links that open WhatsApp */
+    a[href^="https://wa.me"] { color: #25D366; }
+
+    /* 8. Universal selector: every element */
+    * { box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <h1>Chai Corner</h1>
+  <h2>Today's specials</h2>
+
+  <div class="card">
+    <p>Karak Chai</p>
+    <p class="price">PKR 120</p>
+  </div>
+
+  <p id="offer">Buy 2, get 1 free after 11 pm!</p>
+  <p><a href="https://wa.me/923001234567">Order on WhatsApp</a></p>
+</body>
+</html>
