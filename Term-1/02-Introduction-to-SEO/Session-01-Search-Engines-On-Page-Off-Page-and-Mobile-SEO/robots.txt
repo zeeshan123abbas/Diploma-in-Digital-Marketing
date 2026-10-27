@@ -1,0 +1,7 @@
+# Allow all crawlers to visit the site
+User-agent: *
+# Keep private or useless pages out of crawling
+Disallow: /admin/
+Disallow: /cart/
+# Tell crawlers where the sitemap is
+Sitemap: https://www.example.com/sitemap.xml
