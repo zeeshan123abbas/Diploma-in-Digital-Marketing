@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Colour and Image</title>
+  <style>
+    /* Modern way: set backgrounds with CSS (the old bgcolor attribute is obsolete) */
+    body {
+      background-color: #f4f8f4;             /* light green page colour */
+    }
+    .hero {
+      background-image: url("images/chai.jpg"); /* image path relative to this file */
+      background-size: cover;                 /* fill the box */
+      background-position: center;
+      background-color: #2e7d32;              /* fallback colour if the image is missing */
+      color: white;
+      padding: 60px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Fresh Karak Chai</h1>
+    <p>Open till 2 am</p>
+  </div>
+  <p>The page background is light green; the banner uses an image with a fallback colour.</p>
+</body>
+</html>
