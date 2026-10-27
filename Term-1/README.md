@@ -12,7 +12,7 @@ Term 1 takes you from "what is marketing?" to running and measuring real campaig
 |---|---|---|---|
 | 01 | Foundations of Digital Marketing | 8 | [Open module](./01-Foundations-of-Digital-Marketing/README.md) |
 | 02 | Introduction to SEO | 6 | [Open module](./02-Introduction-to-SEO/README.md) |
-| 03 | Essentials of Website Design and Development | 10 | Coming soon |
+| 03 | Essentials of Website Design and Development | 10 | [Open module](./03-Essentials-of-Website-Design-and-Development/README.md) |
 | 04 | Search and Display Marketing | 10 | Coming soon |
 | 05 | Social Media Marketing | 18 | Coming soon |
 | 06 | Email Marketing | 5 | Coming soon |
