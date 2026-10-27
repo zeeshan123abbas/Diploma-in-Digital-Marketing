@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Layout with Flexbox</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header, footer { background: #1e3a5f; color: #fff; padding: 14px 20px; }
+
+    /* Flexbox: put nav links in a row with space between */
+    nav ul { display: flex; gap: 16px; list-style: none; margin: 0; padding: 0; }
+    nav a { color: #fff; text-decoration: none; }
+
+    /* Main area: article and aside side by side */
+    .layout { display: flex; gap: 20px; padding: 20px; }
+    main { flex: 3; }          /* takes 3 parts of the space */
+    aside { flex: 1; background: #f2f2f2; padding: 12px; }   /* takes 1 part */
+
+    /* On phones, stack main and aside */
+    @media (max-width: 700px) {
+      .layout { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Karachi Food Blog</strong>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+      <article>
+        <h1>Best Nihari Spots in Karachi</h1>
+        <p>Published <time datetime="2026-10-20">20 October 2026</time></p>
+        <section>
+          <h2>1. Burns Road</h2>
+          <p>Classic, rich and spicy.</p>
+        </section>
+        <section>
+          <h2>2. Federal B Area</h2>
+          <p>Great for families.</p>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h3>Popular posts</h3>
+      <p>Top 5 biryani places</p>
+    </aside>
+  </div>
+
+  <footer>&copy; 2026 Karachi Food Blog</footer>
+</body>
+</html>
