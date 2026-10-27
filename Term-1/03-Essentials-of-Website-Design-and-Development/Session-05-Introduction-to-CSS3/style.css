@@ -1,0 +1,12 @@
+/* External style sheet used by three-ways-to-add-css.html */
+
+/* selector  { property: value; } */
+h1 {
+  color: navy;            /* text colour */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 20px;
+}
