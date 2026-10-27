@@ -1,0 +1,10 @@
+# Lunch Habits Survey (sample questions)
+
+1. What best describes you? (Student / Office worker / Business owner / Homemaker / Other)
+2. How many times did you order lunch from outside last week? (0 / 1-2 / 3-4 / 5+)
+3. How much do you usually spend on one lunch? (Under PKR 400 / 400-600 / 600-900 / Above 900)
+4. What time do you want lunch delivered? (Before 12:30 / 12:30-1:30 / After 1:30)
+5. How do you usually order? (foodpanda / WhatsApp / Phone call / Walk-in / Other)
+6. What matters most to you? Pick one. (Price / Taste / Hygiene / Speed / Portion size)
+7. Where do you discover new food places? (Instagram / Facebook / Friends / Google / TikTok)
+8. What stopped you from ordering from a home kitchen before? (open answer)
