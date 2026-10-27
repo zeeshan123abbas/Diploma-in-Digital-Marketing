@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioning and Float</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding-bottom: 80px; }
+
+    /* 1. relative: moves from its normal place; also acts as anchor for absolute children */
+    .card { position: relative; width: 260px; padding: 20px; margin: 20px; border: 1px solid #ccc; }
+
+    /* 2. absolute: placed relative to the nearest positioned parent (.card) */
+    .badge { position: absolute; top: -10px; right: -10px; background: #dc3545; color: #fff; padding: 4px 8px; border-radius: 4px; }
+
+    /* 3. fixed: stays on screen while scrolling (e.g. WhatsApp button) */
+    .whatsapp { position: fixed; bottom: 16px; right: 16px; background: #25D366; color: #fff; padding: 12px 16px; border-radius: 30px; text-decoration: none; }
+
+    /* 4. sticky: normal until you scroll past it, then sticks to the top */
+    .topbar { position: sticky; top: 0; background: #1e3a5f; color: #fff; padding: 10px; }
+
+    /* 5. float: text wraps around the image */
+    .thumb { float: left; width: 120px; height: 90px; background: #ddd; margin: 0 12px 8px 0; }
+    .clear { clear: both; }   /* stop wrapping after the float */
+  </style>
+</head>
+<body>
+  <div class="topbar">Free delivery on orders above PKR 3,000</div>
+
+  <div class="card">
+    <span class="badge">-20%</span>
+    <h3>Lawn 3-Piece</h3>
+    <p>PKR 4,800</p>
+  </div>
+
+  <div style="margin: 20px;">
+    <div class="thumb"></div>
+    <p>This text wraps around the grey image box because the box is floated left. Floats were once used for whole layouts; today we use Flexbox and Grid for layouts and keep float mainly for wrapping text around images.</p>
+    <p class="clear">This paragraph starts below the image because of clear: both.</p>
+  </div>
+
+  <div style="height: 900px; margin: 20px;">Scroll down: the top bar sticks and the WhatsApp button stays fixed.</div>
+
+  <a class="whatsapp" href="https://wa.me/923001234567">WhatsApp</a>
+</body>
+</html>
