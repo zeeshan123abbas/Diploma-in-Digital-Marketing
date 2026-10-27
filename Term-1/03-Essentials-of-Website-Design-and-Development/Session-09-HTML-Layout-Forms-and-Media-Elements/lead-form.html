@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Lead Form</title>
+  <style>
+    form { max-width: 420px; font-family: Arial, sans-serif; }
+    label { display: block; margin-top: 12px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; margin-top: 4px; font-size: 16px; }
+    button { margin-top: 16px; padding: 12px 20px; background: #198754; color: #fff; border: 0; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Book a Free Demo Class</h1>
+
+  <!-- action = where data is sent; method = how (post hides data from the URL) -->
+  <form action="https://example.com/submit" method="post">
+
+    <!-- label "for" matches input "id": clicking the label focuses the input -->
+    <label for="name">Full name</label>
+    <input type="text" id="name" name="name" placeholder="e.g. Ali Raza" required>
+
+    <!-- type="email" checks the format and shows an email keyboard on phones -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <!-- type="tel" opens the number keypad; pattern checks a Pakistani mobile format -->
+    <label for="phone">Mobile number</label>
+    <input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="03[0-9]{9}" required>
+
+    <!-- Drop-down list -->
+    <label for="course">Course</label>
+    <select id="course" name="course">
+      <option value="seo">SEO</option>
+      <option value="smm">Social Media Marketing</option>
+      <option value="ads">Google Ads</option>
+    </select>
+
+    <!-- Radio buttons: choose ONE (same name) -->
+    <p><strong>Preferred time</strong></p>
+    <label><input type="radio" name="time" value="weekday" checked> Weekdays</label>
+    <label><input type="radio" name="time" value="weekend"> Weekends</label>
+
+    <!-- Date picker -->
+    <label for="date">Demo date</label>
+    <input type="date" id="date" name="date">
+
+    <!-- Multi-line text -->
+    <label for="msg">Message (optional)</label>
+    <textarea id="msg" name="message" rows="3"></textarea>
+
+    <!-- Checkbox for consent -->
+    <label><input type="checkbox" name="consent" required> I agree to be contacted on WhatsApp</label>
+
+    <button type="submit">Book my demo</button>
+  </form>
+</body>
+</html>
