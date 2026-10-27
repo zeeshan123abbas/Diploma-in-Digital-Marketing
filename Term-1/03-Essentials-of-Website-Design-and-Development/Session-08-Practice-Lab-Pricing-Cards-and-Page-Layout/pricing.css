@@ -1,0 +1,43 @@
+/* Box model for everything: width includes padding and border */
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #f6f8fb; }
+
+/* Sticky top bar */
+.topbar { position: sticky; top: 0; background: #4b2c83; color: #fff; padding: 12px 20px; font-weight: bold; }
+
+/* Centred page container */
+.container { max-width: 1000px; margin: 0 auto; padding: 30px 16px; text-align: center; }
+.subtitle { color: #666; margin-bottom: 30px; }
+
+/* Cards: float-based row (simple and classic). Session 09 shows Flexbox. */
+.cards::after { content: ""; display: block; clear: both; }  /* clearfix: contain the floats */
+.card {
+  float: left;
+  width: 31.33%;          /* three cards per row */
+  margin: 0 1% 20px;      /* 1% left + 1% right gap */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  position: relative;     /* anchor for the absolute badge */
+  text-align: left;
+}
+.card ul { padding-left: 18px; min-height: 90px; }
+
+/* Highlighted middle card */
+.featured { border: 2px solid #4b2c83; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+.badge { position: absolute; top: -12px; left: 24px; background: #ff9800; color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 13px; }
+
+.price { font-size: 26px; font-weight: bold; color: #4b2c83; margin: 8px 0; }
+.price span { font-size: 14px; color: #777; font-weight: normal; }
+
+.btn { display: block; text-align: center; background: #4b2c83; color: #fff; padding: 12px; border-radius: 6px; text-decoration: none; }
+.btn:hover { background: #3a2166; }
+
+.contact { clear: both; padding-top: 30px; }
+
+/* On small screens, cards take full width and stack */
+@media (max-width: 700px) {
+  .card { float: none; width: 100%; margin: 0 0 20px; }
+}
