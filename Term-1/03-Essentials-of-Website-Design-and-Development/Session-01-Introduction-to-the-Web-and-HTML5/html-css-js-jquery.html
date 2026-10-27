@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML + CSS + JavaScript + jQuery</title>
+  <!-- CSS controls how things LOOK -->
+  <style>
+    h1 { color: darkgreen; }
+    .offer { background: #fff3cd; padding: 10px; }
+  </style>
+  <!-- jQuery library loaded from its official CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <!-- HTML gives STRUCTURE -->
+  <h1>Chai Corner</h1>
+  <button id="jsButton">Show offer (JavaScript)</button>
+  <button id="jqButton">Hide offer (jQuery)</button>
+  <p class="offer" id="offer" style="display:none">2 cups for PKR 200 today!</p>
+
+  <script>
+    // Plain JavaScript adds BEHAVIOUR: show the offer when clicked
+    document.getElementById("jsButton").addEventListener("click", function () {
+      document.getElementById("offer").style.display = "block";
+    });
+
+    // jQuery does the same kind of thing with shorter code
+    $("#jqButton").click(function () {
+      $("#offer").hide();
+    });
+  </script>
+</body>
+</html>
