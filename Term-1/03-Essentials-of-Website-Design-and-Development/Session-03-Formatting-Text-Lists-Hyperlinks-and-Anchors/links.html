@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyperlinks and Anchors</title>
+</head>
+<body>
+  <!-- Anchor target near the top -->
+  <h1 id="top">Hyperlink Examples</h1>
+
+  <!-- 1. Absolute URL: full address to another website -->
+  <p><a href="https://www.google.com/">Google</a></p>
+
+  <!-- 2. Absolute URL opening in a new tab (rel protects security) -->
+  <p><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs (new tab)</a></p>
+
+  <!-- 3. Relative paths: links to files in YOUR site -->
+  <p><a href="lists.html">Same folder</a></p>
+  <p><a href="images/chai.jpg">Sub-folder file</a></p>
+  <p><a href="../README.md">One folder up</a></p>
+
+  <!-- 4. Email and phone links -->
+  <p><a href="mailto:info@example.pk?subject=Course%20enquiry">Email us</a></p>
+  <p><a href="tel:+922134567890">Call 021-34567890</a></p>
+
+  <!-- 5. Link to a section on the same page (anchor) -->
+  <p><a href="#faq">Jump to FAQ</a></p>
+
+  <!-- 6. Link to a downloadable file -->
+  <p><a href="brochure.pdf" download>Download brochure</a></p>
+
+  <!-- 7. An image as a link -->
+  <a href="https://wa.me/923001234567"><img src="images/whatsapp.png" alt="Chat on WhatsApp" width="48"></a>
+
+  <div style="height:800px"></div> <!-- empty space so the jump is visible -->
+
+  <h2 id="faq">FAQ</h2>
+  <p>Classes are held on weekends.</p>
+  <p><a href="#top">Back to top</a></p>
+</body>
+</html>
