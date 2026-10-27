@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Media Elements</title>
+  <style>
+    img, video, iframe { max-width: 100%; height: auto; }   /* never wider than the screen */
+    .video-wrap iframe { aspect-ratio: 16 / 9; width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <h1>Media Elements</h1>
+
+  <!-- 1. Image with caption -->
+  <figure>
+    <img src="product.jpg" alt="Blue lawn suit with white embroidery" width="600" height="400" loading="lazy">
+    <figcaption>Summer lawn collection 2026</figcaption>
+  </figure>
+
+  <!-- 2. Video with controls and a poster image -->
+  <video controls width="640" poster="video-poster.jpg">
+    <source src="promo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 3. Audio (e.g. a podcast clip) -->
+  <audio controls>
+    <source src="podcast-clip.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 4. Embedded YouTube video (replace VIDEO_ID with a real ID) -->
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Promo video" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- 5. Embedded Google Map (replace with the embed link from Google Maps > Share > Embed) -->
+  <iframe src="https://www.google.com/maps?q=North+Nazimabad+Karachi&output=embed" width="600" height="300" title="Map to our office" loading="lazy"></iframe>
+</body>
+</html>
