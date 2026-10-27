@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Solar Site Survey in Lahore | SunPower</title>
+  <meta name="description" content="Cut your electricity bill with rooftop solar. Book a free site survey in Lahore. Net metering support and 10-year panel warranty.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics 4 tag: replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <strong class="logo">SunPower</strong>
+      <a class="btn btn-small" href="#survey">Free survey</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-row">
+      <div class="hero-text">
+        <h1>Cut Your Electricity Bill with Rooftop Solar</h1>
+        <p>Book a free site survey in Lahore. We handle design, installation and net metering paperwork.</p>
+        <ul class="ticks">
+          <li>Free rooftop survey</li>
+          <li>10-year panel warranty</li>
+          <li>Easy instalment plans</li>
+        </ul>
+      </div>
+
+      <!-- Lead form -->
+      <form id="survey" class="lead-form" novalidate>
+        <h2>Book your free survey</h2>
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Mobile (03XXXXXXXXX)</label>
+        <input type="tel" id="phone" name="phone" pattern="03[0-9]{9}" required>
+
+        <label for="bill">Monthly bill (PKR)</label>
+        <select id="bill" name="bill">
+          <option>Under 15,000</option>
+          <option>15,000 - 40,000</option>
+          <option>Above 40,000</option>
+        </select>
+
+        <button class="btn" type="submit">Book free survey</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="container steps">
+    <h2>How it works</h2>
+    <div class="step-row">
+      <div class="step"><h3>1. Survey</h3><p>An engineer visits your roof.</p></div>
+      <div class="step"><h3>2. Design</h3><p>You get a system size and quote.</p></div>
+      <div class="step"><h3>3. Install</h3><p>Installation and net metering support.</p></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SunPower Lahore &middot; <a href="https://wa.me/923001234567">WhatsApp us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
