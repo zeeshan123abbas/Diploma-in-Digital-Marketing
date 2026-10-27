@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styling Hyperlinks</title>
+  <style>
+    /* Link states must be written in this order: L-V-H-A (LoVe HAte) */
+    a:link    { color: #0d6efd; text-decoration: none; }  /* not yet visited */
+    a:visited { color: #6f42c1; }                         /* already visited */
+    a:hover   { color: #dc3545; text-decoration: underline; } /* mouse over */
+    a:active  { color: #fd7e14; }                         /* while clicking */
+
+    /* Keyboard users: show a clear outline when the link has focus */
+    a:focus-visible { outline: 3px solid #ffc107; }
+  </style>
+</head>
+<body>
+  <p><a href="https://www.google.com/">Google</a></p>
+  <p><a href="https://developer.mozilla.org/">MDN Web Docs</a></p>
+</body>
+</html>
