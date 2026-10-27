@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Specificity and Pseudo Selectors</title>
+  <style>
+    /* Specificity score: (IDs, classes, elements) */
+    p            { color: black; }   /* (0,0,1) */
+    .message     { color: blue;  }   /* (0,1,0)  beats p */
+    #welcome     { color: green; }   /* (1,0,0)  beats .message */
+    p.message    { font-weight: bold; } /* (0,1,1) */
+
+    /* Pseudo-classes: style elements in a state or position */
+    li:first-child   { font-weight: bold; }
+    li:nth-child(even) { background: #f2f2f2; }   /* zebra stripes */
+    input:focus      { outline: 2px solid #0d6efd; }
+    button:hover     { background: #198754; color: white; }
+
+    /* Pseudo-elements: style part of an element */
+    .tip::before     { content: "Tip: "; font-weight: bold; color: #d63384; }
+    p.intro::first-letter { font-size: 2em; color: #1e3a5f; }
+  </style>
+</head>
+<body>
+  <p id="welcome" class="message">I am green because the ID selector is most specific.</p>
+  <p class="message">I am blue (class beats element).</p>
+  <p class="intro">Big first letter using ::first-letter.</p>
+
+  <ul>
+    <li>First item (bold)</li>
+    <li>Second item (striped)</li>
+    <li>Third item</li>
+    <li>Fourth item (striped)</li>
+  </ul>
+
+  <p class="tip">Write one H1 per page.</p>
+  <input type="text" placeholder="Click me to see focus">
+  <button>Hover me</button>
+</body>
+</html>
