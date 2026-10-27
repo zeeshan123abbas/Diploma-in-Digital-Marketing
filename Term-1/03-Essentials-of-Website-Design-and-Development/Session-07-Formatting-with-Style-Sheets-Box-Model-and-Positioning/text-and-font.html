@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text and Font Styles</title>
+  <!-- A free web font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;  /* font stack: fallback fonts if the first fails */
+      font-size: 17px;
+      line-height: 1.6;          /* vertical spacing between lines */
+      color: #333;
+    }
+    h1 { font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .lead { font-size: 1.25rem; font-style: italic; }
+
+    /* Paragraph indentation and alignment */
+    .indented  { text-indent: 40px; }        /* first line moves right */
+    .center    { text-align: center; }
+    .justify   { text-align: justify; }
+    .right     { text-align: right; }
+
+    /* Vertical spacing between paragraphs */
+    .spaced { margin-bottom: 30px; }
+
+    /* Border around a paragraph */
+    .note { border: 2px dashed #f0ad4e; padding: 10px; }
+
+    /* Inline span: style part of a sentence */
+    .highlight { color: #c0392b; font-weight: 700; }
+    .shadow { text-shadow: 1px 1px 2px #999; }
+  </style>
+</head>
+<body>
+  <h1 class="shadow">Eid Collection</h1>
+  <p class="lead">New lawn prints for summer 2026.</p>
+  <p class="indented spaced">This paragraph starts with an indent and has extra space below it.</p>
+  <p class="center">Centred text for short announcements.</p>
+  <p class="justify">Justified text lines up on both sides. Use it carefully on mobile because it can create uneven gaps between words in narrow columns.</p>
+  <p class="right">Right-aligned text.</p>
+  <p class="note">Order before <span class="highlight">25th Ramadan</span> for delivery before Eid.</p>
+</body>
+</html>
