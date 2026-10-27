@@ -1,0 +1,5 @@
+ID,Area,Page URL,Issue found,Tool,Impact (H/M/L),Effort (H/M/L),Recommendation,Owner,Status
+1,Crawl health,/old-offers,Returns 404 but linked from menu,Screaming Frog,H,L,Update menu link or 301 redirect to /offers,Developer,Open
+2,Metadata,/about,Missing meta description,Screaming Frog,M,L,Write 150-160 character description,SEO,Open
+3,Speed,/,LCP 4.8 s on mobile due to large hero image,PageSpeed Insights,H,M,Compress hero to WebP under 200 KB and preload it,Developer,Open
+4,Security,/,http version does not redirect to https,Browser,H,L,Add 301 redirect to https,Hosting,Open
